@@ -10,30 +10,30 @@
 
 .teaser-container .teaser-wrapper .teaser > div ul {
   list-style: none;
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
 .teaser-container .teaser-wrapper .teaser > div ul li {
   position: relative;
 }
 
-.teaser-container .teaser-wrapper .teaser > div ul li:before {
+.teaser-container .teaser-wrapper .teaser > div ul li::before {
   content: "✓";
   position: absolute;
   background: #58bf6f;
   color: white;
-  padding: 0px 4px;
+  padding: 0 4px;
   font-size: 12px;
   border-radius: 50%;
   left: -25px;
   top: 8px;
 }
 
-.teaser-container .teaser-wrapper .teaser > div P {
+.teaser-container .teaser-wrapper .teaser > div p {
   margin-top: 10%;
 }
 
-.teaser-container .teaser-wrapper .teaser > div P a:first-child {
+.teaser-container .teaser-wrapper .teaser > div p a:first-child {
   color: #fff;
   background: linear-gradient(104deg, #005dba 39.94%, #6d29b6);
   padding: 12px 30px;
@@ -42,7 +42,7 @@
   font-weight: bold;
 }
 
-.teaser-container .teaser-wrapper .teaser > div P a:last-child {
+.teaser-container .teaser-wrapper .teaser > div p a:last-child {
   color: #005dba;
   background: #fff;
   padding: 12px 35px;
