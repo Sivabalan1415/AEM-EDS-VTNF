@@ -2,17 +2,21 @@
 .teaser-container .teaser-wrapper .teaser > div {
   display: flex;
 }
+
 .teaser-container .teaser-wrapper .teaser > div > div {
   width: 50%;
   margin-left: 31px;
 }
+
 .teaser-container .teaser-wrapper .teaser > div ul {
   list-style: none;
   margin: 20px 0px;
 }
+
 .teaser-container .teaser-wrapper .teaser > div ul li {
   position: relative;
 }
+
 .teaser-container .teaser-wrapper .teaser > div ul li:before {
   content: "✓";
   position: absolute;
@@ -24,9 +28,11 @@
   left: -25px;
   top: 8px;
 }
+
 .teaser-container .teaser-wrapper .teaser > div P {
   margin-top: 10%;
 }
+
 .teaser-container .teaser-wrapper .teaser > div P a:first-child {
   color: #fff;
   background: linear-gradient(104deg, #005dba 39.94%, #6d29b6);
@@ -35,6 +41,7 @@
   font-size: 18px;
   font-weight: bold;
 }
+
 .teaser-container .teaser-wrapper .teaser > div P a:last-child {
   color: #005dba;
   background: #fff;
@@ -44,12 +51,15 @@
   font-weight: bold;
   margin-left: 5%;
 }
+
 .teaser-container .teaser-wrapper .alignright > div {
   flex-direction: row-reverse;
 }
+
 .teaser-container .teaser-wrapper .aligntop > div {
   flex-direction: column;
 }
+
 .teaser-container .teaser-wrapper .alignbottom > div {
   flex-direction: column-reverse;
 }/*# sourceMappingURL=teaser.css.map */
