@@ -1,4 +1,5 @@
 export default function decorate(block) {
+    
   const firstblock = block.children[0];
   console.log(firstblock);
   firstblock.classList.add("custom-teaser");
