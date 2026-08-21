@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-.teaser-container .teaser-wrapper .teaser > div {
-  display: flex;
-}
-
 .teaser-container .teaser-wrapper .alignright > div {
   flex-direction: row-reverse;
 }
@@ -14,6 +10,10 @@
 
 .teaser-container .teaser-wrapper .alignbottom > div {
   flex-direction: column-reverse;
+}
+
+.teaser-container .teaser-wrapper .teaser > div {
+  display: flex;
 }
 
 .teaser-container .teaser-wrapper .teaser > div > div {
