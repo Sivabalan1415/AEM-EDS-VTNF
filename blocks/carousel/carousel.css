@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #171717;
+}
+
+/* ..button.... */
+.carousel-button-action {
+  display: flex;
+  justify-content: space-around;
+}
+
+.carousel-button-action-links {
+  color: #fff !important;
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 10px 20px;
+  border-radius: 8px;
+  position: relative;
+  transition: 1s;
+}
+
+.carousel-button-action-links:hover {
+  text-decoration: none;
+  border: 1px solid #fff;
+}
+
+/* ..teaser... */
+.carousel-teaser {
+  display: none;
+  flex-direction: row;
+  height: 400px;
+}
+
+.carousel-teaser-content {
+  padding: 7% 5% 0;
+}
+
+.carousel-teaser-title {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.carousel-teaser-description {
+  color: #fff;
+  margin-bottom: 10%;
+  line-height: 30px;
+}
+
+.carousel-teaser-action-link {
+  color: #fff !important;
+  font-size: 18px;
+  font-weight: bold;
+  background: transparent;
+}
+
+/* ...Action-Button... */
+.carousel-action-links {
+  color: black !important;
+  background: #fff;
+  padding: 3px 8px;
+  border-radius: 100%;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.carousel-action-links:hover {
+  text-decoration: none;
+  border: 1px solid #fff;
+}
+
+.previous-next {
+  position: relative;
+}
+
+.carousel-action-links:first-child {
+  position: absolute;
+  top: -55px;
+  left: 31%;
+}
+
+.carousel-action-links:last-child {
+  position: absolute;
+  top: -55px;
+  left: 61%;
+}
+
+.carousel-indicator {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  position: absolute;
+  left: 47%;
+  transform: translateX(-50%);
+  bottom: -15px;
+}
+
+.carousel-indicator-links {
+  color: rgb(255 255 255 / 16.5%);
+  font-size: 100px;
+  margin: 0;
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+
+.carousel-indicator-active {
+  opacity: 1;
+  color: #fff;
+}
+
+/* ...ActiveClass.. */
+
+/* ..ActiveButton... */
+.carousel-button-action-link-active {
+  background: #000;
+  transition: 1s;
+}
+
+.carousel-button-action-link-active::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 8px;
+  background: linear-gradient(253.85deg, #6d29b6, #005dba);
+  z-index: -1;
+  filter: blur(1px);
+  opacity: 1;
+}
+
+/* ...ActiveTeaser */
+.carousel-teaser-active {
+  display: flex;
+}
+
+.carousel-teaser-next {
+  animation: slide-from-right 0.9s ease-in-out;
+}
+
+.carousel-teaser-previous {
+  animation: slide-from-left 0.9s ease-in-out;
+}
+
+@keyframes slide-from-right {
+  from {
+    transform: translateX(100%) scale(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-from-left {
+  from {
+    transform: translateX(-100%) scale(0);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
